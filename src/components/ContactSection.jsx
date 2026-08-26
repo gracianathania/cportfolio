@@ -79,13 +79,12 @@ export default function ContactSection() {
               >
                 <div className="rounded-2xl overflow-hidden bg-olive-soft border border-charcoal/20">
                   <img
-                    src="/chaca-photo.jpg"
+                    src="/tikel.jpg"
                     alt="Chaca"
                     className="w-full h-72 object-cover object-top"
                   />
                 </div>
                 <div className="pt-3 text-center">
-                  <p className="font-serif font-bold text-sm">{personalInfo.fullName}</p>
                   <p className="font-script text-olive text-base font-bold -mt-0.5">always ready for new ideas ✦</p>
                 </div>
               </motion.div>
@@ -96,7 +95,7 @@ export default function ContactSection() {
         </div>
 
         {/* ── Footer Bottom Bar ── */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans font-semibold text-charcoal/60">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-sans font-semibold text-charcoal/60 pt-2">
 
           <p className="flex items-center gap-1.5">
             <Sparkles className="w-3.5 h-3.5 text-olive" />

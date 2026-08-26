@@ -5,13 +5,13 @@ import { personalInfo } from '../data/portfolioData';
 export default function HeroSection() {
   return (
     <section id="home" className="relative bg-olive-theme text-cream-50 pt-12 pb-24 sm:pb-32 px-4 sm:px-8 overflow-hidden">
-      
+
       {/* Container */}
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-        
+
         {/* ── Left Column: Headline & Short Intro ── */}
         <div className="lg:col-span-7 flex flex-col items-start space-y-6">
-          
+
           {/* ── Signature Editorial Title ── */}
           <div className="space-y-1">
             <h1 className="leading-[1.1] text-white">
@@ -55,12 +55,12 @@ export default function HeroSection() {
         {/* ── Right Column: High-Positioned Realistic Wide Lanyard ID Card ── */}
         <div className="lg:col-span-5 relative flex justify-center lg:justify-end -mt-12 lg:-mt-24 pt-0">
           <div className="relative flex flex-col items-center select-none">
-            
+
             {/* Wide Fabric Lanyard Strap & Metal Clip Assembly */}
             <div className="flex flex-col items-center z-20 pointer-events-none">
-              
+
               {/* Wide Fabric Patterned Strap */}
-              <div 
+              <div
                 className="w-14 sm:w-16 h-24 sm:h-28 border-x-2 border-charcoal/80 shadow-md relative overflow-hidden flex flex-col items-center justify-start"
                 style={{
                   backgroundColor: '#E2F86B',
@@ -151,7 +151,7 @@ export default function HeroSection() {
               {/* Chaca's Portrait Photo inside ID Card */}
               <div className="relative rounded-2xl overflow-hidden bg-olive-soft border-2 border-charcoal/30 shadow-sm mx-auto mb-3.5 group-hover:scale-[1.01] transition-transform">
                 <img
-                  src="/chaca-photo.jpg"
+                  src="/chaca-square.jpg"
                   alt={personalInfo.name}
                   className="w-full h-52 sm:h-60 object-cover object-top"
                 />

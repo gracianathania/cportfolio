@@ -6,9 +6,9 @@ import { personalInfo, skills } from '../data/portfolioData';
 export default function AboutSection() {
   return (
     <section id="about" className="bg-[#FAF7EE] text-charcoal py-20 px-4 sm:px-8 relative overflow-hidden">
-      
+
       <div className="max-w-6xl mx-auto space-y-16 relative z-10">
-        
+
         {/* ── Section Title: MEET CHACA ── */}
         <div className="text-center space-y-3 max-w-3xl mx-auto">
           <motion.h2
@@ -33,10 +33,10 @@ export default function AboutSection() {
 
         {/* ── Main Content Grid: Scalloped Photo + Story ── */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          
+
           {/* ── Left Column: Sky Blue Scalloped Frame (Image Style) ── */}
           <div className="lg:col-span-5 flex justify-center relative">
-            
+
             {/* Hand-drawn cursive caption */}
             <motion.span
               animate={{ rotate: [-6, -2, -6] }}
@@ -60,8 +60,12 @@ export default function AboutSection() {
               {/* Photo */}
               <div className="rounded-2xl overflow-hidden bg-white p-2 border-2 border-charcoal shadow-sm">
                 <img
-                  src="/chaca-photo.jpg"
+                  src="/chaca-kecil.JPG"
                   alt={personalInfo.name}
+                  onError={(e) => {
+                    e.currentTarget.onerror = null;
+                    e.currentTarget.src = "/chaca-photo.jpg";
+                  }}
                   className="w-full h-80 sm:h-96 object-cover object-top rounded-xl"
                 />
               </div>
@@ -78,7 +82,7 @@ export default function AboutSection() {
 
           {/* ── Right Column: Narrative Story + Highlight ── */}
           <div className="lg:col-span-7 space-y-6">
-            
+
             {/* Hand-drawn Arrow + Headline statement */}
             <div className="relative pt-2">
               {/* Curly Doodle Arrow */}
