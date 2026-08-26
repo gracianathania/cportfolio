@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Theme color shortcuts */
+  .bg-olive-theme {
+    background-color: #3E4F25 !important;
+  }
+  .bg-lavender-theme {
+    background-color: #D6C7E8 !important;
+  }
+  .bg-cream-theme {
+    background-color: #FAF7EE !important;
+  }
+  .bg-sky-scallop {
+    background-color: #BDE0F7 !important;
+  }
+  .bg-lime-highlight {
+    background-color: #E2F86B !important;
+  }
+  .text-olive-theme {
+    color: #3E4F25 !important;
+  }
+
+  /* ===========================
+     RETRO & EDITORIAL SHADOWS
+  =========================== */
+  .shadow-retro {
+    box-shadow: 4px 4px 0px 0px rgba(29, 36, 22, 0.9);
+  }
+  
+  .shadow-retro-lg {
+    box-shadow: 8px 8px 0px 0px rgba(29, 36, 22, 0.9);
+  }
+  
+  .shadow-retro-lavender {
+    box-shadow: 5px 5px 0px 0px #B9A1D3;
+  }
+
+  .shadow-polaroid {
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.25), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+  }
+
+  .shadow-scallop {
+    box-shadow: 6px 6px 0px 0px rgba(29, 36, 22, 0.85);
+  }
+}
+
+/* ===========================
+   SCALLOPED POSTAGE FRAME
+=========================== */
+.scallop-border {
+  background: radial-gradient(circle at 10px 10px, transparent 8px, #BDE0F7 8.5px);
+  background-size: 20px 20px;
+}
+
+/* ===========================
+   MARQUEE ANIMATIONS
+=========================== */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
+
+.animate-marquee-fast {
+  animation: marquee 14s linear infinite;
+}
+
+/* Gentle Float Animation */
+@keyframes gentle-float {
+  0%, 100% { transform: translateY(0px) rotate(-1deg); }
+  50% { transform: translateY(-8px) rotate(1.5deg); }
+}
+
+.animate-float {
+  animation: gentle-float 4.5s ease-in-out infinite;
+}
+
+@keyframes bird-fly {
+  0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+  33% { transform: translate(6px, -8px) rotate(4deg); }
+  66% { transform: translate(-4px, -4px) rotate(-3deg); }
+}
+
+.animate-bird {
+  animation: bird-fly 4s ease-in-out infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7EE;
+}
+::-webkit-scrollbar-thumb {
+  background: #3E4F25;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2B3719;
+}
