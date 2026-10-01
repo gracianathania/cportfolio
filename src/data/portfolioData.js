@@ -388,17 +388,15 @@ export const projects = [
   },
   {
     id: 8,
-    title: "BudayaKu — Indonesian Culture Platform",
+    title: "C-GIS — Clinic GIS Pekanbaru",
     category: "web",
-    subtitle: "Web Development / UI/UX Design",
+    subtitle: "Web Development / GIS",
     year: "2024",
-    description: "Platform digital wadah content creator mempublikasikan karya kebudayaan lokal sebagai bentuk pelestarian warisan budaya Indonesia.",
-    image: "https://images.unsplash.com/photo-1528164344885-47b1492b5e55?auto=format&fit=crop&w=800&q=80",
-    tags: ["WebDev", "UIUXDesign", "CulturePlatform", "LocalHeritage"],
+    description: "Aplikasi Sistem Informasi Geografis (GIS) interaktif berbasis web yang memetakan lokasi klinik kesehatan di Kota Pekanbaru secara presisi, dilengkapi informasi layanan medis, BPJS, dan estimasi tarif.",
+    image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80",
+    tags: ["WebDev", "GIS", "HealthTech", "Pekanbaru"],
     projectLinks: [
-      { type: "prototype", label: "Prototype Figma", url: "#" },
-      { type: "demo", label: "Live Web Demo", url: "#" },
-      { type: "github", label: "GitHub Repository", url: "#" }
+      { type: "demo", label: "Live Web — cgispekanbaru.vercel.app", url: "https://cgispekanbaru.vercel.app/" }
     ],
     featured: true
   },
