@@ -34,8 +34,8 @@ export const journeyGroups = [
         period: "Feb - Jul 2026",
         description: "Sistem Reservasi Agenda Publik",
         photos: [
-          "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+          "/journey/BRK Syariah/1.jpeg",
+          "/journey/BRK Syariah/2.jpeg",
         ]
       },
       {
@@ -44,8 +44,8 @@ export const journeyGroups = [
         period: "Aug - Dec 2025",
         description: "Integrated System Divisi Internal",
         photos: [
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
+          "/journey/Nusareka/1.png",
+          "/journey/Nusareka/2.png",
         ]
       }
     ]
@@ -63,8 +63,8 @@ export const journeyGroups = [
         period: "2024 - 2025",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=800&q=80",
+          "/journey/Sekretaris Kementerian Seni & Budaya/1.png",
+          "/journey/Sekretaris Kementerian Seni & Budaya/2.JPG",
         ]
       },
       {
@@ -73,8 +73,8 @@ export const journeyGroups = [
         period: "2023 - 2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80",
+          "/journey/Sekretaris Dewan Presidium/1.JPG",
+          "/journey/Sekretaris Dewan Presidium/2.JPG",
         ]
       }
     ]
@@ -92,8 +92,8 @@ export const journeyGroups = [
         period: "2023",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+          "/journey/ISO/1.JPG",
+          "/journey/ISO/2.JPG",
         ]
       },
       {
@@ -102,8 +102,8 @@ export const journeyGroups = [
         period: "2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80",
+          "/journey/PCR EXPO VOKASI/1.jpeg",
+          "/journey/PCR EXPO VOKASI/2.jpeg",
         ]
       }
     ]
@@ -121,18 +121,8 @@ export const journeyGroups = [
         period: "2025",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=800&q=80",
-        ]
-      },
-      {
-        role: "Divisi Dokumentasi BEM",
-        organization: "Desa Binaan (DESBIN) X EDACT",
-        period: "2025",
-        description: "",
-        photos: [
-          "https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80",
+          "/journey/Steering Committee (SC) Pengarah Acara BEM/1.png",
+          "/journey/Steering Committee (SC) Pengarah Acara BEM/2.JPG",
         ]
       },
       {
@@ -141,8 +131,8 @@ export const journeyGroups = [
         period: "2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&w=800&q=80",
+          "/journey/Sekolah BEM/1.JPG",
+          "/journey/Sekolah BEM/2.JPG",
         ]
       }
     ]
@@ -160,8 +150,7 @@ export const journeyGroups = [
         period: "",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1591115765373-5207764f72e7?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=800&q=80",
+          "/journey/Rancangan Kerja Wilayah II Ke-VI (Rakerwil II)/1.jpeg",
         ]
       },
       {
@@ -170,8 +159,8 @@ export const journeyGroups = [
         period: "2023",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1587825140708-dfaf18c4b11a?auto=format&fit=crop&w=800&q=80",
+          "/journey/ITO/1.JPG",
+          "/journey/ITO/2.JPG",
         ]
       },
       {
@@ -180,8 +169,8 @@ export const journeyGroups = [
         period: "2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80",
+          "/journey/IOT/1.jpeg",
+          "/journey/IOT/2.jpeg",
         ]
       },
       {
@@ -190,8 +179,8 @@ export const journeyGroups = [
         period: "2023 & 2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80",
+          "/journey/Musyawarah Besar & Musyawarah Istimewa ITSA - 2023 & 2024/1.jpeg",
+          "/journey/Musyawarah Besar & Musyawarah Istimewa ITSA - 2023 & 2024/2.jpeg",
         ]
       },
       {
@@ -200,8 +189,8 @@ export const journeyGroups = [
         period: "2022",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1533174072545-7a4b6ad7a6c3?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1496024840928-4c417adf211d?auto=format&fit=crop&w=800&q=80",
+          "/journey/FAREWEL PARTY/1.JPG",
+          "/journey/FAREWEL PARTY/2.JPG",
         ]
       }
     ]
@@ -219,8 +208,8 @@ export const journeyGroups = [
         period: "2023 & 2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=800&q=80",
+          "/journey/CUXION I & II - 2023 & 2024/1.JPG",
+          "/journey/CUXION I & II - 2023 & 2024/2.JPG",
         ]
       },
       {
@@ -229,8 +218,8 @@ export const journeyGroups = [
         period: "2023",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&w=800&q=80",
+          "/journey/CTS TALK/1.JPG",
+          "/journey/CTS TALK/2.JPG",
         ]
       }
     ]
@@ -248,8 +237,8 @@ export const journeyGroups = [
         period: "2026 – Ongoing",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80",
+          "/journey/PKM Tunagrahita/1.jpeg",
+          "/journey/PKM Tunagrahita/2.jpeg",
         ]
       },
       {
@@ -258,18 +247,8 @@ export const journeyGroups = [
         period: "2026 – Ongoing",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=800&q=80",
-        ]
-      },
-      {
-        role: "Tim Panitia Riset",
-        organization: "PKM FGD Riset Dosen",
-        period: "2026",
-        description: "",
-        photos: [
-          "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=800&q=80",
+          "/journey/PKM Rumah Lemon/1.jpeg",
+          "/journey/PKM Rumah Lemon/2.jpeg",
         ]
       },
       {
@@ -278,8 +257,8 @@ export const journeyGroups = [
         period: "2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1559223607-a43c990c692c?auto=format&fit=crop&w=800&q=80",
+          "/journey/Pelatihan Bisnis Digital UMKM - 2024/1.jpeg",
+          "/journey/Pelatihan Bisnis Digital UMKM - 2024/2.jpeg",
         ]
       },
       {
@@ -288,8 +267,8 @@ export const journeyGroups = [
         period: "2024",
         description: "",
         photos: [
-          "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80",
-          "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=800&q=80",
+          "/journey/Workshop Web Server CWP - 2024/1.jpeg",
+          "/journey/Workshop Web Server CWP - 2024/2.jpeg",
         ]
       }
     ]

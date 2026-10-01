@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <header className="sticky top-0 z-50 bg-[#FAF7EE]/95 backdrop-blur-md border-b border-charcoal/15 py-3 px-4 sm:px-8">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-        
+
         {/* Logo — Beyond the Birds style */}
         <a href="#home" className="flex items-center gap-2 group">
           <div className="font-serif font-extrabold text-xl sm:text-2xl tracking-tight text-charcoal">
@@ -44,7 +44,7 @@ export default function Navbar() {
             className="flex items-center gap-1.5 bg-[#D4F34A] text-charcoal font-sans font-extrabold text-xs tracking-wider px-4 py-2 rounded-full border-2 border-charcoal shadow-sm hover:shadow-md transition-all"
           >
             <Sparkles className="w-3.5 h-3.5" />
-            WORK WITH ME
+            CONNECT WITH ME
           </motion.a>
         </nav>
 
@@ -83,7 +83,7 @@ export default function Navbar() {
               className="flex items-center justify-center gap-2 bg-[#D4F34A] text-charcoal font-sans font-extrabold text-xs tracking-wider py-2.5 rounded-full border-2 border-charcoal mt-2 shadow-sm"
             >
               <Sparkles className="w-3.5 h-3.5" />
-              WORK WITH ME
+              CONNECT WITH ME
             </a>
           </motion.div>
         )}

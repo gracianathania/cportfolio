@@ -24,7 +24,7 @@ export default function ContactSection() {
             <div className="lg:col-span-8 space-y-6">
 
               <div className="inline-flex items-center gap-2 bg-[#D4F34A] text-charcoal font-sans font-extrabold text-xs uppercase tracking-widest px-4 py-2 rounded-full border-2 border-charcoal shadow-sm">
-                <Sparkles className="w-3.5 h-3.5" /> WORK WITH ME ✦
+                <Sparkles className="w-3.5 h-3.5" /> CONNECT WITH ME ✦
               </div>
 
               <h2 className="font-serif font-black text-4xl sm:text-6xl tracking-tight text-white leading-tight">

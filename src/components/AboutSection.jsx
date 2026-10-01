@@ -124,7 +124,7 @@ export default function AboutSection() {
 
             {/* Core Stack Badges */}
             <div className="pt-4 flex flex-wrap gap-2.5">
-              {['Web & Mobile Dev', 'UI/UX Design', 'Game & Animation', 'Machine Learning & NLP', 'PKM Awardee', 'Event & Leadership'].map((tag) => (
+              {['Web & Mobile Dev', 'UI/UX Design', 'Game & Animation', 'Machine Learning & NLP', 'Event & Leadership'].map((tag) => (
                 <span
                   key={tag}
                   className="bg-cream-100 text-charcoal font-sans font-bold text-xs px-3.5 py-1.5 rounded-full border border-charcoal/20"
