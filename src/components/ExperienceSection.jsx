@@ -72,86 +72,107 @@ function PhotoGalleryModal({ photos, title, onClose }) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       onClick={onClose}
-      className="fixed inset-0 bg-charcoal/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
+      className="fixed inset-0 bg-charcoal/85 backdrop-blur-md z-50 flex items-center justify-center p-3 sm:p-6"
     >
       <motion.div
-        initial={{ opacity: 0, scale: 0.9, y: 20 }}
+        initial={{ opacity: 0, scale: 0.95, y: 15 }}
         animate={{ opacity: 1, scale: 1, y: 0 }}
-        exit={{ opacity: 0, scale: 0.9, y: 20 }}
+        exit={{ opacity: 0, scale: 0.95, y: 15 }}
         transition={{ type: 'spring', stiffness: 300, damping: 25 }}
         onClick={(e) => e.stopPropagation()}
-        className="bg-cream-50 rounded-3xl border-4 border-charcoal shadow-retro-lg w-full max-w-lg overflow-hidden"
+        className="bg-cream-50 rounded-3xl border-4 border-charcoal shadow-retro-xl w-full max-w-4xl max-h-[92vh] flex flex-col overflow-hidden"
       >
         {/* Header */}
-        <div className="p-4 border-b-2 border-charcoal flex items-center justify-between bg-[#3E4F25] text-white">
-          <div className="flex items-center gap-2">
-            <Images className="w-4 h-4" />
-            <h3 className="font-serif font-bold text-sm">{title}</h3>
+        <div className="px-5 py-4 border-b-2 border-charcoal flex items-center justify-between bg-[#3E4F25] text-white flex-shrink-0">
+          <div className="flex items-center gap-2.5 min-w-0 pr-3">
+            <div className="p-1.5 bg-white/15 rounded-lg flex-shrink-0">
+              <Images className="w-4 h-4 text-cream-100" />
+            </div>
+            <h3 className="font-serif font-bold text-sm sm:text-base truncate">{title}</h3>
           </div>
-          <button onClick={onClose} className="p-1.5 rounded-lg bg-white/20 hover:bg-white/30 transition-colors">
-            <X className="w-4 h-4" />
+          <button 
+            onClick={onClose} 
+            className="p-1.5 sm:p-2 rounded-xl bg-white/20 hover:bg-white/30 text-white transition-all hover:scale-105 active:scale-95 flex-shrink-0"
+            title="Tutup (Esc)"
+          >
+            <X className="w-4 h-4 sm:w-5 sm:h-5" />
           </button>
         </div>
 
-        {/* Photo */}
-        <div className="p-4">
-          <div className="relative rounded-2xl overflow-hidden border-2 border-charcoal/20">
-            <motion.img
-              key={activePhoto}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              src={photos[activePhoto]}
-              alt={`Dokumentasi ${activePhoto + 1}`}
-              className="w-full h-56 sm:h-72 object-cover"
-            />
-            <div className="absolute bottom-3 right-3 bg-charcoal/80 text-white font-sans font-bold text-xs px-2 py-1 rounded-lg backdrop-blur-sm">
+        {/* Modal Body / Photo Container */}
+        <div className="p-4 sm:p-6 flex-1 flex flex-col min-h-0 overflow-y-auto">
+          {/* Main Photo View Area */}
+          <div className="relative rounded-2xl overflow-hidden border-2 border-charcoal bg-charcoal/[0.04] flex items-center justify-center flex-1 min-h-[340px] max-h-[62vh] sm:max-h-[68vh] p-2">
+            <AnimatePresence mode="wait">
+              <motion.img
+                key={activePhoto}
+                initial={{ opacity: 0, scale: 0.98 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.2 }}
+                src={photos[activePhoto]}
+                alt={`Dokumentasi ${activePhoto + 1}`}
+                className="max-h-[58vh] sm:max-h-[65vh] w-auto max-w-full object-contain rounded-xl select-none"
+              />
+            </AnimatePresence>
+
+            {/* Floating Navigation Arrows on Photo (Left / Right) */}
+            {photos.length > 1 && (
+              <>
+                <button
+                  onClick={() => setActivePhoto(p => (p - 1 + photos.length) % photos.length)}
+                  className="absolute left-3 top-1/2 -translate-y-1/2 p-2.5 sm:p-3 bg-white/90 hover:bg-white text-charcoal border-2 border-charcoal rounded-2xl shadow-retro hover:scale-105 active:scale-95 transition-all backdrop-blur-sm z-10"
+                  aria-label="Foto sebelumnya"
+                >
+                  <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
+                </button>
+                <button
+                  onClick={() => setActivePhoto(p => (p + 1) % photos.length)}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 p-2.5 sm:p-3 bg-white/90 hover:bg-white text-charcoal border-2 border-charcoal rounded-2xl shadow-retro hover:scale-105 active:scale-95 transition-all backdrop-blur-sm z-10"
+                  aria-label="Foto berikutnya"
+                >
+                  <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
+                </button>
+              </>
+            )}
+
+            {/* Photo Counter Badge */}
+            <div className="absolute bottom-3 right-3 bg-charcoal/85 text-white font-sans font-bold text-xs px-3 py-1.5 rounded-xl backdrop-blur-md border border-white/20 shadow-md">
               {activePhoto + 1} / {photos.length}
             </div>
           </div>
 
-          {/* Navigation */}
+          {/* Navigation Controls & Thumbnails */}
           {photos.length > 1 && (
-            <div className="flex items-center justify-center gap-3 mt-3">
-              <button
-                onClick={() => setActivePhoto(p => (p - 1 + photos.length) % photos.length)}
-                className="p-2 bg-white border-2 border-charcoal rounded-xl shadow-retro hover:bg-cream-100 transition-colors"
-              >
-                <ChevronLeft className="w-4 h-4" />
-              </button>
-              <div className="flex gap-2">
+            <div className="mt-4 flex flex-col items-center gap-3 flex-shrink-0">
+              {/* Pagination Dots */}
+              <div className="flex items-center gap-2">
                 {photos.map((_, i) => (
                   <button
                     key={i}
                     onClick={() => setActivePhoto(i)}
-                    className={`rounded-full transition-all ${
-                      i === activePhoto ? 'w-5 h-3 bg-[#3E4F25]' : 'w-3 h-3 bg-charcoal/30 hover:bg-charcoal/50'
+                    className={`rounded-full transition-all duration-300 ${
+                      i === activePhoto ? 'w-7 h-2.5 bg-[#3E4F25]' : 'w-2.5 h-2.5 bg-charcoal/30 hover:bg-charcoal/50'
                     }`}
+                    aria-label={`Ke foto ${i + 1}`}
                   />
                 ))}
               </div>
-              <button
-                onClick={() => setActivePhoto(p => (p + 1) % photos.length)}
-                className="p-2 bg-white border-2 border-charcoal rounded-xl shadow-retro hover:bg-cream-100 transition-colors"
-              >
-                <ChevronRight className="w-4 h-4" />
-              </button>
-            </div>
-          )}
 
-          {/* Thumbnails */}
-          {photos.length > 1 && (
-            <div className="grid grid-cols-4 gap-2 mt-3">
-              {photos.map((photo, i) => (
-                <button
-                  key={i}
-                  onClick={() => setActivePhoto(i)}
-                  className={`h-14 rounded-lg overflow-hidden border-2 transition-all ${
-                    i === activePhoto ? 'border-[#3E4F25] shadow-sm' : 'border-charcoal/20 hover:border-charcoal/50'
-                  }`}
-                >
-                  <img src={photo} alt={`thumb ${i+1}`} className="w-full h-full object-cover" />
-                </button>
-              ))}
+              {/* Thumbnails Row */}
+              <div className="flex items-center justify-center gap-2.5 flex-wrap">
+                {photos.map((photo, i) => (
+                  <button
+                    key={i}
+                    onClick={() => setActivePhoto(i)}
+                    className={`h-14 sm:h-16 w-20 sm:w-24 rounded-xl overflow-hidden border-2 transition-all ${
+                      i === activePhoto ? 'border-[#3E4F25] ring-2 ring-[#3E4F25]/40 scale-105 shadow-retro' : 'border-charcoal/20 opacity-70 hover:opacity-100 hover:border-charcoal/50'
+                    }`}
+                  >
+                    <img src={photo} alt={`thumb ${i+1}`} className="w-full h-full object-cover" />
+                  </button>
+                ))}
+              </div>
             </div>
           )}
         </div>
