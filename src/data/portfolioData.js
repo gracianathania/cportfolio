@@ -7,8 +7,8 @@ export const personalInfo = {
   title: "UI/UX Designer & Creative Web Developer",
   tagline: "Crafting digital spaces & bespoke websites that feel authentic, timeless, and intentional.",
   status: "Available for Projects & Collaborations",
-  bioShort: "Mahasiswa Teknik Informatika berpengalaman di bidang Web & Mobile Dev, UI/UX Design, Game & Animasi, hingga Machine Learning & NLP.",
-  bioStory: `Halo! Aku Gracia Nathania (Chaca), mahasiswa Teknik Informatika yang berpengalaman mengerjakan berbagai proyekan di bidang Web & Mobile Dev, UI/UX Design, Game & Animasi, hingga Machine Learning & NLP. Pengalaman proyekan ini banyak aku eksplorasi melalui tugas akademik, pengalaman magang industri, maupun keikutsertaan dalam kompetisi tingkat nasional dan internasional.
+  bioShort: "Lulusan Teknik Informatika berpengalaman di bidang Web & Mobile Dev, UI/UX Design, Game & Animasi, hingga Machine Learning & NLP.",
+  bioStory: `Halo! Aku Gracia Nathania (Chaca), lulusan Teknik Informatika yang berpengalaman mengerjakan berbagai proyekan di bidang Web & Mobile Dev, UI/UX Design, Game & Animasi, hingga Machine Learning & NLP. Pengalaman proyekan ini banyak aku eksplorasi melalui tugas akademik, pengalaman magang industri, maupun keikutsertaan dalam kompetisi tingkat nasional dan internasional.
 
 Selain sibuk di dunia koding dan desain, aku juga aktif berorganisasi dan sering dipercaya di divisi acara, baik untuk event-event kampus maupun kegiatan PKM bareng dosen, mulai dari menyusun acara, dokumentasi, hingga visual desain. Karena orangnya komunikatif, kreatif, dan cepat berbaur, aku selalu antusias membawa semangat leadership, kerja sama tim, dan problem solving supaya setiap kegiatan yang digarap bersama bisa berjalan lancar dan berkesan!`,
   cvUrl: "#",
