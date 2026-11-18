@@ -365,7 +365,7 @@ export const projects = [
     subtitle: "AI & Machine Learning",
     year: "2025",
     description: "Aplikasi Android pendeteksi kartu remi berbasis CNN Transfer Learning (Computer Vision) untuk mencegah kecurangan permainan.",
-    image: "https://images.unsplash.com/photo-1529480780361-1ecba03a7a4e?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=800&q=80",
     tags: ["Android", "DeepLearning", "CNN", "ComputerVision"],
     projectLinks: [
       { type: "github", label: "Source Code GitHub", url: "#" }
