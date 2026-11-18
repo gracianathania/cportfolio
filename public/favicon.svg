@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="oliveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4B602C"/>
+      <stop offset="100%" stop-color="#323F1D"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Rounded Squircle -->
+  <rect x="2" y="2" width="60" height="60" rx="16" fill="url(#oliveGrad)" stroke="#1F2421" stroke-width="3"/>
+  
+  <!-- Monogram C -->
+  <text x="25" y="44" font-family="'DM Serif Display', 'Playfair Display', Georgia, 'Times New Roman', serif" font-weight="900" font-size="36" fill="#FAF7EE" text-anchor="middle">C</text>
+  
+  <!-- Signature 4-point Retro Sparkle in Lime -->
+  <path d="M 44 14 Q 44 24 54 24 Q 44 24 44 34 Q 44 24 34 24 Q 44 24 44 14 Z" fill="#D4F34A" stroke="#1F2421" stroke-width="1"/>
+  
+  <!-- Small Accent Sparkle/Dot -->
+  <circle cx="16" cy="18" r="2.5" fill="#D4F34A" />
+</svg>

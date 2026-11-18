@@ -285,6 +285,20 @@ export const projectCategories = [
 
 export const projects = [
   {
+    id: 9,
+    title: "faktaMu.com — Portal Berita & Media Siber",
+    category: "web",
+    subtitle: "Web Development",
+    year: "2026",
+    description: "Platform portal media siber dan berita online yang menyajikan informasi aktual, edukasi publik, opini, serta liputan kegiatan dengan antarmuka modern yang cepat dan responsif.",
+    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80",
+    tags: ["WebDev", "NewsPortal", "MediaSiber", "DigitalMedia"],
+    projectLinks: [
+      { type: "demo", label: "Live Web — faktamu.com", url: "https://faktamu.com" }
+    ],
+    featured: true
+  },
+  {
     id: 1,
     title: "e-Scheduler — PT. Bank Riau Kepri Syariah",
     category: "web",
@@ -397,20 +411,6 @@ export const projects = [
     tags: ["WebDev", "GIS", "HealthTech", "Pekanbaru"],
     projectLinks: [
       { type: "demo", label: "Live Web — cgispekanbaru.vercel.app", url: "https://cgispekanbaru.vercel.app/" }
-    ],
-    featured: true
-  },
-  {
-    id: 9,
-    title: "faktaMu.com — Portal Berita & Media Siber",
-    category: "web",
-    subtitle: "Web Development",
-    year: "2025",
-    description: "Platform portal media siber dan berita online yang menyajikan informasi aktual, edukasi publik, opini, serta liputan kegiatan dengan antarmuka modern yang cepat dan responsif.",
-    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80",
-    tags: ["WebDev", "NewsPortal", "MediaSiber", "DigitalMedia"],
-    projectLinks: [
-      { type: "demo", label: "Live Web — faktamu.com", url: "https://faktamu.com" }
     ],
     featured: true
   }
