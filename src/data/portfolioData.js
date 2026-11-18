@@ -368,9 +368,11 @@ export const projects = [
     image: "https://images.unsplash.com/photo-1511193311914-0346f16efe90?auto=format&fit=crop&w=800&q=80",
     tags: ["Android", "DeepLearning", "CNN", "ComputerVision"],
     projectLinks: [
-      { type: "github", label: "Source Code GitHub", url: "#" }
+      { type: "pdf", label: "PPT Presentasi Deteksi Kartu CNN (PDF)", url: "https://drive.google.com/file/d/16nxMXidG5ZfGndmwtU1SMvk2ebnl8J3h/view?usp=sharing" },
+      { type: "download", label: "Download RemiCek Universal APK (.apk)", url: "https://drive.google.com/file/d/1bsbHDVFwGuSJxl4ST2Rj_bzKofOaHB51/view?usp=drive_link" },
+      { type: "download", label: "Download RemiCek ARM64 APK (.apk)", url: "https://drive.google.com/file/d/1VR2Cs91MWnK7ZUCu_pmEDsJkwjJUfluc/view?usp=drive_link" }
     ],
-    featured: false
+    featured: true
   },
   {
     id: 6,
