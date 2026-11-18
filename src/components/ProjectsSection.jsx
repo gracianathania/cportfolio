@@ -87,7 +87,7 @@ function ProjectDetailModal({ project, onClose }) {
         {/* Scrollable Content Body */}
         <div className="overflow-y-auto p-6 space-y-6 flex-1">
           {/* Cover Image */}
-          <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden border-2 border-charcoal/20 shadow-sm">
+          <div className="relative h-56 sm:h-64 rounded-2xl overflow-hidden border-2 border-charcoal/20 shadow-sm bg-charcoal">
             <img
               src={project.image}
               alt={project.title}
@@ -95,8 +95,10 @@ function ProjectDetailModal({ project, onClose }) {
                 e.currentTarget.onerror = null;
                 e.currentTarget.src = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80";
               }}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover filter contrast-[1.04] saturate-[0.92] sepia-[0.06]"
             />
+            <div className="absolute inset-0 bg-[#3E4F25]/10 mix-blend-color pointer-events-none" />
+            <div className="absolute inset-0 bg-gradient-to-t from-charcoal/40 via-transparent to-transparent pointer-events-none" />
           </div>
 
           {/* Description */}
@@ -267,22 +269,26 @@ export default function ProjectsSection() {
                         e.currentTarget.onerror = null;
                         e.currentTarget.src = "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80";
                       }}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-full object-cover filter contrast-[1.04] saturate-[0.88] sepia-[0.08] group-hover:scale-105 group-hover:saturate-100 group-hover:sepia-0 transition-all duration-500"
                     />
                     
+                    {/* Unified Editorial Warm Tone Overlay */}
+                    <div className="absolute inset-0 bg-[#3E4F25]/10 mix-blend-color pointer-events-none group-hover:opacity-40 transition-opacity duration-500" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 via-charcoal/15 to-transparent pointer-events-none" />
+
                     {/* Category Pill Tag */}
-                    <span className="absolute top-3 left-3 bg-[#E2F86B] text-charcoal font-sans font-extrabold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-charcoal shadow-sm">
+                    <span className="absolute top-3 left-3 bg-[#E2F86B] text-charcoal font-sans font-extrabold text-[10px] uppercase tracking-wider px-3 py-1 rounded-full border border-charcoal shadow-sm z-10">
                       {project.subtitle}
                     </span>
 
                     {project.year && (
-                      <span className="absolute bottom-3 left-3 bg-charcoal/80 text-white font-sans font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full backdrop-blur-sm">
+                      <span className="absolute bottom-3 left-3 bg-charcoal/85 text-white font-sans font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full backdrop-blur-sm z-10 border border-white/10">
                         {project.year}
                       </span>
                     )}
 
                     {project.featured && (
-                      <span className="absolute top-3 right-3 bg-lavender text-charcoal font-sans font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-charcoal flex items-center gap-1 shadow-sm">
+                      <span className="absolute top-3 right-3 bg-lavender text-charcoal font-sans font-extrabold text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-full border border-charcoal flex items-center gap-1 shadow-sm z-10">
                         <Sparkles className="w-3 h-3 text-olive" /> Featured
                       </span>
                     )}

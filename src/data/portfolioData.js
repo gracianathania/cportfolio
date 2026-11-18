@@ -305,7 +305,7 @@ export const projects = [
     subtitle: "Web Development",
     year: "2026",
     description: "Platform digitalisasi permohonan reservasi agenda pihak luar yang dapat dikelola secara terintegrasi oleh internal bank.",
-    image: "https://images.unsplash.com/photo-1556740758-90de374c12ad?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=800&q=80",
     tags: ["WebDev", "BRKSyariah", "EnterpriseSystem", "AgendaReservasi"],
     pdfUrl: "/Tampilan e-Schedule.pdf",
     projectLinks: [
@@ -335,7 +335,7 @@ export const projects = [
     subtitle: "3D & Animasi / Virtual Reality",
     year: "2025",
     description: "Pembuatan model 3D detail property dan lingkungan virtual imersif Istana Siak untuk preservasi cagar budaya dan pengalaman interaktif.",
-    image: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=800&q=80",
     tags: ["3DModeling", "VirtualReality", "SiakHeritage", "ImmersiveTech"],
     exeUrl: "/VR ISTANA SIAK.exe",
     projectLinks: [
@@ -381,7 +381,7 @@ export const projects = [
     subtitle: "UI/UX Design",
     year: "2024",
     description: "Rancangan prototype antarmuka aplikasi kesehatan mental yang menenangkan, intuitif, dan ramah pengguna.",
-    image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=800&q=80",
     tags: ["UIUXDesign", "FigmaPrototype", "MentalHealth", "UserResearch"],
     projectLinks: [
       { type: "prototype", label: "Figma Interactive Prototype Calma", url: "https://www.figma.com/proto/koKbhLxAsiiYvCy02iQYyE/Aplikasi-Kesehatan-Mental-Calma---Gracia-Nathania?node-id=2-301&t=uLggmP7BiSqc26pN-1" }
@@ -395,7 +395,7 @@ export const projects = [
     subtitle: "3D & Animasi",
     year: "2024",
     description: "Film animasi pendek kreatif tentang pemanfaatan e-card kampus dengan predikat Finalis Cabang Lomba Animasi GEMASTIK XVII 2024 (Kemendikbudristek).",
-    image: "https://images.unsplash.com/photo-1616499370260-485b3e5ed653?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800&q=80",
     tags: ["Animation", "GEMASTIK2024", "MotionGraphics", "CampusTech"],
     projectLinks: [
       { type: "video", label: "Tonton Film Animasi (Google Drive)", url: "https://drive.google.com/file/d/1mQKeaXU0C__Bl-Za9OyQKm-9-MwauXMd/view?usp=sharing" }
