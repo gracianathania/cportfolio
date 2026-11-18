@@ -187,10 +187,12 @@ export default function ExperienceSection() {
 
   // Marquee ticker items for the dark ribbon
   const marqueeItems = [
-    "UI/UX DESIGN", "✦", "FRONTEND DEVELOPMENT", "✦", "PKM RESEARCH AWARDEE", "✦",
-    "FIGMA TO REACT", "✦", "OPEN FOR COLLABORATIONS", "✦", "FREELANCE & FULLTIME", "✦",
-    "UI/UX DESIGN", "✦", "FRONTEND DEVELOPMENT", "✦", "PKM RESEARCH AWARDEE", "✦",
-    "FIGMA TO REACT", "✦", "OPEN FOR COLLABORATIONS", "✦", "FREELANCE & FULLTIME", "✦"
+    "UI/UX DESIGN", "✦", "WEB DEVELOPMENT", "✦", "MOBILE APP DEV", "✦",
+    "MACHINE LEARNING (ML)", "✦", "DEEP LEARNING (DL)", "✦", "NATURAL LANGUAGE PROCESSING (NLP)", "✦",
+    "3D MODELLING & ANIMATION", "✦", "COMPUTER VISION", "✦",
+    "UI/UX DESIGN", "✦", "WEB DEVELOPMENT", "✦", "MOBILE APP DEV", "✦",
+    "MACHINE LEARNING (ML)", "✦", "DEEP LEARNING (DL)", "✦", "NATURAL LANGUAGE PROCESSING (NLP)", "✦",
+    "3D MODELLING & ANIMATION", "✦", "COMPUTER VISION", "✦"
   ];
 
   const toggleGroup = (id) => {
