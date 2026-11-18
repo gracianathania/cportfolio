@@ -189,10 +189,10 @@ export default function ExperienceSection() {
   const marqueeItems = [
     "UI/UX DESIGN", "✦", "WEB DEVELOPMENT", "✦", "MOBILE APP DEV", "✦",
     "MACHINE LEARNING (ML)", "✦", "DEEP LEARNING (DL)", "✦", "NATURAL LANGUAGE PROCESSING (NLP)", "✦",
-    "3D MODELLING & ANIMATION", "✦", "COMPUTER VISION", "✦",
+    "3D MODELLING", "✦",
     "UI/UX DESIGN", "✦", "WEB DEVELOPMENT", "✦", "MOBILE APP DEV", "✦",
     "MACHINE LEARNING (ML)", "✦", "DEEP LEARNING (DL)", "✦", "NATURAL LANGUAGE PROCESSING (NLP)", "✦",
-    "3D MODELLING & ANIMATION", "✦", "COMPUTER VISION", "✦"
+    "3D MODELLING", "✦"
   ];
 
   const toggleGroup = (id) => {
