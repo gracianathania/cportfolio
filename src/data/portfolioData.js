@@ -402,18 +402,17 @@ export const projects = [
   },
   {
     id: 9,
-    title: "Sistem Manajemen KBK Perguruan Tinggi",
+    title: "faktaMu.com — Portal Berita & Media Siber",
     category: "web",
     subtitle: "Web Development",
-    year: "2023",
-    description: "Sistem pendukung implementasi Kurikulum Berbasis Kompetensi (KBK) guna menjawab tantangan pasar kerja & perkembangan teknologi.",
-    image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80",
-    tags: ["WebDev", "EducationSystem", "KBKCurriculum"],
+    year: "2025",
+    description: "Platform portal media siber dan berita online yang menyajikan informasi aktual, edukasi publik, opini, serta liputan kegiatan dengan antarmuka modern yang cepat dan responsif.",
+    image: "https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80",
+    tags: ["WebDev", "NewsPortal", "MediaSiber", "DigitalMedia"],
     projectLinks: [
-      { type: "pdf", label: "Dokumen Sistem & Modul KBK (PDF)", url: "#" },
-      { type: "github", label: "GitHub Code", url: "#" }
+      { type: "demo", label: "Live Web — faktamu.com", url: "https://faktamu.com" }
     ],
-    featured: false
+    featured: true
   }
 ];
 
